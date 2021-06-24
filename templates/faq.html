@@ -1,0 +1,32 @@
+{% extends "header.html" %}
+{% block content %}
+<link rel="stylesheet" href="static\css\faq.css">
+<style>
+    .card {
+        background-color: rgba(256, 256, 256, 0.8);
+        border-radius: 20px;
+    }
+
+</style>
+<div class="container ">
+    <div class="card">
+        <h1>F.A.Q.</h1>
+        <details class="center">
+            <summary>How big the selected area should be?</summary>
+            <p>Make sure the scale on the <a href="https://geojson.io/" target="_blank">geojson.io</a> is between 3km to
+                5Km</p>
+            <img src='static\img\scale.jpg' alt='' />
+        </details>
+        <details class="center">
+            <summary>How long will it take for the report to genrate?</summary>
+            <p>It depends on the size of the image, usually it taked around 4-5hrs.It might even require more than 8hrs.
+            </p>
+        </details>
+        <details class="center">
+            <summary>Where will you recive the report?</summary>
+            <p>After you submit the request, you will recive a confirmation mail on the entred email, and the report
+                once it is genrated </p>
+        </details>
+    </div>
+</div>
+{% endblock %}
